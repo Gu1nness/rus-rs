@@ -1,0 +1,2 @@
+[default.databases.rus]
+url = "postgresql://rus:rus@localhost/rus"

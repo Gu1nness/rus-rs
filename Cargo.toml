@@ -1,0 +1,21 @@
+[package]
+name = "rus-rs"
+version = "0.1.0"
+edition = "2021"
+authors = ["Neha Oudin <neha@oudin.red>"]
+readme = "README.md"
+license = "MIT"
+keywords = ["url", "short", "shortener", "link"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+url = "2"
+rand = "*"
+rocket = { version = "*", features=["json"] }
+serde = { version = "*", features=["derive"] }
+diesel = { version = "*", features=["postgres", "r2d2"]}
+
+[dependencies.rocket_db_pools]
+version = "*"
+features = ["diesel_postgres"]
